@@ -1,0 +1,769 @@
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* scrol behavior */
+html{
+    scroll-behavior: smooth;
+}
+/* *************************************** Header ************************************** */
+header{
+    position: fixed;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white !important;
+}
+.header_wrapper{
+    height: 100%;
+    width: 1290px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding: 0 10px;
+}
+.nav_link_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_item{
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    margin: 0 20px;
+}
+.nav_item a{
+    font-weight: 500;
+    color: #150C01;
+}
+.nav_item a:hover{
+    color: #DC780B;
+}
+/* booking now button */
+.book_now{
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    width: 155px;
+    height: 36px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #DC780B;
+    color: white;
+}
+.book_now:hover{
+    background-color: white;
+    color: #DC780B;
+    border: 1px solid #DC780B;
+    
+}
+/* burger */
+.burger_link{
+    width: fit-content;
+}
+.burger{
+    display: none;
+    margin: 0 25px;
+}
+/* burger media active */
+.active{
+    left: 0 !important;
+}
+/* *************************************** Home section *************************************** */
+.home{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_wrapper{
+    height: 100%;
+    width:1290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ============================ left */
+.home_left_block{
+    height: 100%;
+    width: 50%;
+    display: flex ;
+    align-items:center;
+    justify-content: left;
+}  
+.left_block_controller{
+    width:555px;
+    display:flex   ;
+    height:356px;
+    padding:10px;
+    align-items:start;
+    flex-direction:column;
+    justify-content:space-around;
+} 
+.left_block_controller h1{
+    width: 100%;
+    text-align:left;
+    color:#150C01;
+    font-weight:700;
+    font-size:48.83px;
+    font-style:normal;
+    font-style:normal;
+    line-height:57.6px ;
+    font-family:"Philosopher", sans-serif;
+}
+.left_block_controller p{
+    margin: 28px 0;
+    font-size:16px;
+    font-weight:500;
+    color:#150C01;
+    text-align: left;
+    line-height:32px;
+    font-style: normal;
+    font-style: normal;
+}
+.home_order_detalis{
+    height: 60px;
+    width: 358px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* order now */
+.order_now{
+    height: 60px;
+    width: 158px;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #DC780B;
+    border: 1px solid transparent;
+}
+.order_now:hover{
+    color: #DC780B;
+    background-color: #ffffff;
+    border: 1px solid #DC780B;
+}
+/* food detalis */
+.food_detalis{
+    height: 60px;
+    width: 170px;
+    display: flex;
+    color: #DC780B;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border: 2px solid #dc770b31;
+}
+.food_detalis:hover{
+    border: 1px solid #DC780B;
+}
+/* ============================ right */
+.home_right_block{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_block_controller{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_block_controller img{
+    height: 100%;
+}
+/* *************************************** Features section *************************************** */
+.feautures_section{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feautures_section_wrapper{
+    height:100%;
+    width:1290px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.feautures_section_title{
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    flex-direction:column;
+}
+.feautures_section_title h4{
+    margin:10px;
+    font-size:16px;
+    font-weight:500;
+    line-height:18.75px;
+    color: rgba(220, 120, 11, 1);
+}
+.feautures_section_title h1{
+    font-size:35px;
+    font-weight:700;
+    color:#150C01;
+    text-align:center;
+    line-height:18.75px;
+    font-family:"Philosopher",sans-serif;
+}
+/* _________________feature cards */
+.feature_cards{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:25px auto;
+    align-items:center;
+    justify-content:space-between ;
+}
+.feature_info_card{
+    width:300px;
+    height:228px;
+    padding: 5px;
+    display:flex;
+    margin:25px auto;
+    align-items:center; 
+    flex-direction:column;
+    background-color:transparent;  
+    justify-content:space-around;
+    border-radius: 15px;
+}
+.feature_info_card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.feature_icon{
+    width:80px;
+    height:80px;
+    padding:25px;
+    display:flex;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+}
+.feature_text{
+    height:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.feature_text h4{
+    font-size:25px;
+    font-weight:700;
+    color:#150C01; 
+    line-height:24px;
+    text-align:center;
+    font-family:"Philosopher", sans-serif;
+}
+.feature_text p{
+    font-size:16px;
+    font-weight:400;
+    color: #150C01; 
+    line-height:24px;
+    text-align:center;
+    font-family:"Philosopher", sans-serif;
+}
+/* *************************************** About us section *************************************** */
+
+.about_us_watermark{
+    left: 0;
+    z-index: -50;
+    height: 700px;
+    position: absolute;
+}
+.about_us_watermark img{
+    height: 100%;
+}
+.about_us_section{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_us_wrapper{
+    height:100%;
+    width:1290px;
+    display:flex;
+    padding: 20px;
+    align-items:center;
+    justify-content:space-between;
+}
+.about_left_block{
+    width: 645px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.about_right_block{
+    width:645px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:right;
+}
+.about_us_text{
+    width:488px;
+    height:315px;
+    display:flex;
+    align-items:start;
+    flex-direction:column;
+    justify-content:center;
+}
+.about_us_text h4{
+    font-size:16px;
+    font-weight:500;
+    text-align:left;
+    line-height:27px;
+    color:rgba(220, 120, 11, 1);
+}
+.about_us_text h1{
+    width:476px;
+    font-weight:700;
+    text-align:left;
+    color:#150C01; 
+    font-size:31.25px;
+    text-align:left;
+    line-height:40.63px;
+    font-family:"Philosopher", sans-serif;
+}
+.about_us_text p{
+    width:476px;
+    margin:17px 0;
+    font-size:16px;
+    font-weight:400;
+    text-align:left;
+    color:#150C01;
+    line-height:24px;
+}
+.about_read_more{
+    width:150px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #DC780B;
+    border-radius: 5px;
+    background-color: rgba(220, 120, 11, 1);
+    color:white;
+}
+.about_read_more:hover{
+    background-color:white;
+    color:#DC780B;
+}
+/* *************************************** Menu section *************************************** */
+.food_menu_section{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food_menu_warapper{
+    height:100%;
+    width:1290px;
+    display:flex;
+    padding: 20px;
+    align-items:center;
+    flex-direction: column;
+    justify-content:left ;         
+}
+.food_menu_title{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+}
+.food_menu_title h4{
+    font-size:16px;
+    font-weight:500;
+    line-height:27px;
+    text-align: center;
+    color:rgba(220, 120, 11, 1);
+}
+.food_menu_title h1{
+    font-weight:700;
+    text-align:left;
+    color:#150C01; 
+    font-size:31.25px;
+    text-align: center;
+    line-height:40.63px;
+    font-family:"Philosopher", sans-serif;   
+}
+.food_menu_title p{
+    width:748px;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    color:#150c01d6;
+    text-align: center;
+}
+/* cards */
+.food_menu_item_cards{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+.food_menu_item_card{
+    width: 360px;
+    margin: 20px;
+    height: 446px;
+    border-radius: 76px 10px 0 0;
+}
+.food_menu_item_card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.food_menu_item_card_text{
+    width:100%;
+    padding:10px;
+}
+.menu_card_nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.menu_card_nav h2{
+    font-size:25px;
+    line-height:24px;
+    font-weight:700px;
+    font-family:"Philosopher",sans-serif;   
+}
+.food_menu_item_card_text p{
+    width:310px;
+    margin:20px 0;
+    font-size:16px;
+    line-height:24px;
+    font-weight:400px;
+}
+.menu_card_footer{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.menu_card_plus{
+    width:36px;
+    height:34px;
+    display:flex;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    align-items:center;
+    justify-content:center;
+    background-color:#DC780B;
+    border:1px solid #DC780B;
+    font-weight:800;
+}
+.menu_card_plus:hover{
+    color: #DC780B;
+    background-color: #ffffff;
+}
+.food_menu_footer{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.food_menu_footer .food_menu_learn_more{
+    margin:5px;
+    padding:3px;
+    font-size:16px;
+    font-weight:500;
+    line-height:27px;
+    text-align:center;
+    border-radius:5px;
+    color:rgba(220, 120, 11, 1);
+    border:1px solid transparent;
+}
+.food_menu_learn_more:hover{
+    border:1px solid #DC780B;
+}
+/* *************************************** Take away section*************************************** */
+.take_away_section{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF1E7;
+}
+.take_away_wrapper{
+    height:100%;
+    width:1290px;
+    flex-wrap: wrap;
+    display:flex;
+    padding: 20px;
+    align-items:center;
+    justify-content:space-evenly ;
+}
+/* left */
+.take_away_wrapper_left{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+.take_away_wrapper_left h4{
+    font-size:16px;
+    font-weight:500;
+    line-height:24px;
+    text-align: left;
+    color:rgba(220, 120, 11, 1);
+}
+.take_away_wrapper_left h1{
+    width: 430px;
+    font-weight:700;
+    text-align:left;
+    color:#150C01; 
+    text-align: left;
+    font-size:31.25px;
+    line-height:40.63px;
+    font-family:"Philosopher", sans-serif;
+}
+.take_away_wrapper_left p{
+    width: 555px;
+    height: 100%;
+    display: flex;
+    padding: 10px 0;
+    font-size: 16px;
+    align-items: center;
+    justify-content: left;
+}
+.take_away_wrapper_left_footer{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+}
+.app_store{
+    height: 48px;
+    width: 163px;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: #150C01;
+    justify-content: space-evenly;
+}
+.google_play{
+    height: 48px;
+    width: 163px;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 5px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    border: 2px solid rgb(187, 187, 187);
+}
+/* right */
+.take_away_wrapper_right{
+    height:100%;
+    display:flex;
+    width:fit-content;
+    align-items:center;
+    justify-content:right;
+}
+.take_away_wrapper_right img{
+    width: fit-content;
+}
+/* *************************************** Contact section*************************************** */
+.contact_section{
+    width: 100%;
+    height:448px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF1E7;
+    margin: 50px 0 20px 0 ;
+}
+.contact_wrapper{
+    height:100%;
+    width:1290px;
+    display:flex;
+    padding:20px;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.contact_wrapper_tittle{
+    height: fit-content;
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_wrapper_tittle h4{
+    font-size:16px;
+    font-weight:500;
+    line-height:24px;
+    text-align: left;
+    color:rgba(220, 120, 11, 1);
+}
+.contact_wrapper_tittle h1{
+    width: 100%;
+    font-weight:700;
+    text-align:left;
+    color:#150C01; 
+    text-align: center;
+    font-size:31.25px;
+    line-height:40.63px;
+    font-family:"Philosopher", sans-serif;
+}
+.contact_wrapper_message{
+    margin-top: 25px;
+    height: fit-content;
+    width: 60%;
+}
+.contact_wrapper_message form{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_wrapper_message form input{
+    height: 75px;
+    width: 79%;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40.6px;
+    color: rgba(0, 0, 0, 0.8);
+    border:2px solid transparent ;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.contact_wrapper_message form input:focus{
+    border: 2px solid #DC780B;
+}
+.contact_wrapper_message form input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40.6px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.contact_wrapper_message form button{
+    height: 75px;
+    width: 20%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #DC780B;
+    background-color: #DC780B;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_wrapper_message form button:hover{
+    background-color: #ffffff;
+    color: #DC780B;
+}
+/* *************************************** Footer*************************************** */
+footer{
+    width: 100%;
+    height:432px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#252525;
+}
+.footer_wrapper{
+    height:100%;
+    width:1290px;
+    display:flex;
+    padding:20px;
+    align-items:end;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.footer_wrapper_card{
+    margin: 10px;
+    width: 200px;
+    display: flex;
+    height: 200px;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer_wrapper_card a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.40px;
+    color: rgba(230, 230, 230, 0.78);
+}
+.footer_wrapper_card a:hover{
+    color: rgba(255, 255, 255, 0.78);
+}
+.footer_logo img{
+    width: 60px;
+    height: 60.42px;
+    margin-bottom: 18px;
+}
+.footer_item{
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 18px;
+    line-height: 20.16px;
+    font-size: 20px !important;
+    font-family:"Philosopher", sans-serif;
+    color: #ffffff !important;
+}
+.footer_social_nav{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
